@@ -1,0 +1,26 @@
+/* FONTS */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap');
+
+/* CSS CUSTOM PROPERTIES */
+
+:root {
+  --ff-primary: 'Roboto', sans-serif;
+  --ff-secondary: 'Playfair Display', serif;
+
+  --fw-reg: 300:
+  --fw-semiBold: 400;
+  --fw-bold: 700;
+
+  --fs-hero-secondary: 1.125rem;
+  --fs-primaryText: 1.3125rem;
+  --fs-secondaryHeadings: 2.25rem;
+  --fs-mainHeadings: 3.75rem;
+
+  --clr-neutral-100: hsl(0, 0%, 100%);
+
+  --clr-accent-400: hsl(48, 52%, 90%);
+  --clr-accent-500: hsl(15, 41%, 36%);
+  --clr-accent-800: hsl(168, 13%, 15%);
+}
