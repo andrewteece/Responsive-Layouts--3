@@ -49,7 +49,23 @@ img {
 body {
   font-family: var(--ff-primary);
   font-size: var(--fs-primaryText);
-  line-height: 1.5;
+  line-height: 1.6;
+}
+
+h1,
+h2 {
+  font-family: var(--ff-secondary);
+  font-weight: var(--fw-bold);
+  line-height: 1.1;
+  margin-top: 0;
+}
+
+h2 {
+  margin-bottom: 1em;
+}
+
+section {
+  padding: 4em 1em;
 }
 
 /* UTILITY */
@@ -73,6 +89,18 @@ body {
   color: var(--clr-neutral-100);
 }
 
+.section__title--dark {
+  color: var(--clr-accent-500);
+}
+
+.section__title--light {
+  color: var(--clr-accent-400);
+}
+
+.text-align {
+  text-align: center;
+}
+
 /* HERO */
 
 .hero {
@@ -81,21 +109,34 @@ body {
   justify-content: center;
   align-items: center;
   gap: 1rem;
+  width: 100%;
   min-height: 42rem;
   background: var(--clr-accent-400);
 }
 
 .hero__title {
-  font-family: var(--ff-secondary);
   font-size: var(--fs-mainHeadings);
   color: var(--clr-accent-500);
-  padding: 0 10rem;
   text-align: center;
-  line-height: 1.1;
 }
 
 .hero__text {
   text-transform: uppercase;
-  letter-spacing: 6px;
+  letter-spacing: 8px;
   font-weight: var(--fw-reg);
+  text-align: center;
+}
+
+@media screen and (min-width: 800px) {
+  .row {
+    display: flex;
+  }
+
+  .col {
+    width: 100%;
+  }
+
+  .col + .col {
+    margin-left: 4em;
+  }
 }
